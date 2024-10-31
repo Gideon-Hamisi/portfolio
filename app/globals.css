@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+* {
+  @apply transition-colors duration-[50ms];
+}
+
+
+.swiper-button-next, .swiper-button-prev  {
+  color: #0aff9d !important;
+}
+
+.swiper-pagination-bullet {
+  background: #0aff9d !important;
+}
+
+/* WebKit-based browsers (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #232323;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #0aff9d;
+  border-radius: 50%; /* This makes the thumb circular */
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;  /* Makes scrollbar smaller */
+  scrollbar-color: #0aff9d #232323; /* Thumb color | Track color */
+}
+
+/* Edge (Chromium-based) */
+/* html {
+  scrollbar-color: #0aff9d #232323;
+  scrollbar-width: thin;
+} */
